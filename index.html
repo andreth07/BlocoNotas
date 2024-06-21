@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Notas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <header>
+        <div id="logo"><img src="./imagem/note.png" /></div>
+        <div id="display"></div>
+        <div id="user">
+        </div>
+    </header>
+    <main>
+        <h1 class="title"> Bloco de Notas</h1>
+        <h2 class="sub">clique para adicionar novas notas</h2>
+        <div id="controls">
+            <div id="add-note">
+                <a href="">
+                    <i class="bi bi-plus-square-fill" style="font-size: 2rem;"></i>
+                </a>
+            </div>
+        </div>
+
+        <div id="notes"> </div>
+
+        <div id="modal-view">
+            <div id="close-modal-view">
+                <a href="">
+                    <i class="bi bi-x-square"></i>
+                </a>
+            </div>
+            <div id="title-note"> </div>
+            <div id="content-note"> </div>
+            <div id="controls-note"> </div>
+        </div>
+
+        <div id="modal">
+            <div class="mb-3" style="border-bottom: 1px solid #1f32fa; display:flex; justify-content: space-between;">
+                <div>
+                    <a href="" id="btn-save-note">
+                        <i class="bi bi-save"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="" style="color:#1f32fa" id="btn-close-modal">
+                        <i class="bi bi-x-square"></i>
+                    </a>
+                </div>
+            </div>
+            <input type="hidden" id="input-id">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="input-title" placeholder="Title">
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Notes</label>
+                <textarea class="form-control" id="input-content" rows="4"></textarea>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer></footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
